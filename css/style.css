@@ -13,8 +13,8 @@ header, nav{
 }
 header{
     background-color: blue;
-    height: 10vh;
     justify-content: center;
+    padding: 5px;
 }
 header img{
     max-width: 50%;
