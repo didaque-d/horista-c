@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horista - Início</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/logic.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo.svg" alt="logo">
+    </header>
+    <main>
+        <main id="cadastro-mes">
+            <h2>Selecione o mês</h2>
+            <select name="" id="selecionar-mes">
+                <option value="0">Janeiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Outubro</option>
+                <option value="10">Novembro</option>
+                <option value="11">Dezembro</option>
+            </select>
+            <div class="opt">
+                <button onclick="etapa1()" class="next">Próximo</button>
+            </div>
+        </main>
+        <main id="cadastro-dias">
+            <h2>Dias Trabalhados:</h2>
+            <label id="mes-escolhido"></label>
+            <div class="dias-btn">
+                <button value="0">Seg</button>
+                <button>Ter</button>
+                <button>Qua</button>
+                <button>Qui</button>
+                <button>Sex</button>
+                <button>Sáb</button>
+                <button>Dom</button>
+            </div>
+            <div class="opt">
+                <button onclick="voltar1()" id="voltar-mes" class="back">Voltar</button>
+            <button id="confirmar-dias" class="next">Confirmar</button>
+            </div>
+        </main>
+        <main id="cadastro-horas">
+            <h2>Horas Trabalhadas</h2>
+
+        </main>
+    </main>
+</body>
+</html>

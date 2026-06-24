@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: calibri;
+}
+header, nav{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color: blue;
+    height: 10vh;
+    justify-content: center;
+}
+header img{
+    max-width: 50%;
+}
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+#cadastro-dias{
+    display: none;
+}
+.opt button{
+    border: none;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+}
+#cadastro-mes{
+    text-align: center;
+}
+#cadastro-mes select{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+.dias-btn{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.dias-btn button{
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 5px;
+    border: none;
+    font-weight: 700;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.300);
+}
+.dias-btn button:hover{
+    background-color: lightblue;
+}
+
+/*Estilos para btn*/
+
+.next{
+    background-color: green;
+    color: white;
+}
+.back{
+    background-color: red;
+    color: white;
+}
