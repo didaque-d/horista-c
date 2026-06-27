@@ -49,3 +49,45 @@ function voltar1(){
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-mes").style.display = "block";
 }
+function etapa2(){
+    document.getElementById("cadastro-dias").style.display = "none";
+    document.getElementById("cadastro-horas").style.display = "block";
+}
+
+let qtdHoras = 0;
+function incrementarHora(){
+    qtdHoras++;
+    document.getElementById("hora-trabalhada").value = qtdHoras;
+    console.log(qtdHoras);
+}
+function decrementarHora(){
+    if(qtdHoras > 0){
+        qtdHoras--;
+        document.getElementById("hora-trabalhada").value = qtdHoras;
+        console.log(qtdHoras);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.dias-btn');
+    if(container){
+        container.addEventListener('click', (event) =>{
+            if(event.target.tagName === 'BUTTON') {
+                event.target.classList.toggle('ativo');
+            }
+        });
+    } else{
+        console.error("Não encontrado");
+    }
+})
+

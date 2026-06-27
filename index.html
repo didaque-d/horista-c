@@ -37,21 +37,38 @@
             <label id="mes-escolhido"></label>
             <div class="dias-btn">
                 <button value="0">Seg</button>
-                <button>Ter</button>
-                <button>Qua</button>
-                <button>Qui</button>
-                <button>Sex</button>
-                <button>Sáb</button>
-                <button>Dom</button>
+                <button value="1">Ter</button>
+                <button value="2">Qua</button>
+                <button value="3">Qui</button>
+                <button value="4">Sex</button>
+                <button value="5">Sáb</button>
+                <button value="6">Dom</button>
             </div>
             <div class="opt">
                 <button onclick="voltar1()" id="voltar-mes" class="back">Voltar</button>
-            <button id="confirmar-dias" class="next">Confirmar</button>
+            <button onclick="etapa2()" id="confirmar-dias" class="next">Confirmar</button>
             </div>
         </main>
         <main id="cadastro-horas">
             <h2>Horas Trabalhadas</h2>
-
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">SEGUNDA</label>
+            <label id="ocorrencias">DIAS 4</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-trabalhada" type="number" value="0">
+                <a href="#" id="decrementar" onclick="decrementarHora()">-1</a>
+                <a href="#" id="incrementar" onclick="incrementarHora()">+1</a>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <div class="opt">
+            <button class="back">Voltar</button>   
+            <button class="next" onclick="etapaFinal()">Concluir</button>
+            </div>
         </main>
     </main>
 </body>

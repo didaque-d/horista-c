@@ -13,8 +13,8 @@ header, nav{
 }
 header{
     background-color: blue;
-    height: 10vh;
     justify-content: center;
+    padding: 5px;
 }
 header img{
     max-width: 50%;
@@ -25,8 +25,11 @@ main{
     padding: 5px;
     text-align: center;
 }
-#cadastro-dias{
+#cadastro-dias, #cadastro-hora{
     display: none;
+}
+.opt{
+    margin: 5px;
 }
 .opt button{
     border: none;
@@ -61,8 +64,61 @@ main{
 .dias-btn button:hover{
     background-color: lightblue;
 }
-
+.column-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30%;
+    aspect-ratio: 1/1;
+}
+.row-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column-info input{
+    width: 50%;
+    aspect-ratio: 1/1;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    text-align: center;
+}
+#dia{
+    font-weight: bolder;
+    font-size: 20px;
+}
+#ocorrencias{
+    font-size: 14px;
+}
+.entrada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#incrementar{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 3px;
+    font-size: 14px;
+    margin-left: 5px;
+    aspect-ratio: 1/1;
+    width: 30%;
+}
+#decrementar{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 3px;
+    font-size: 14px;
+    margin-left: 5px;
+    aspect-ratio: 1/1;
+    width: 30%;
+}
 /*Estilos para btn*/
+
 
 .next{
     background-color: green;
@@ -72,3 +128,9 @@ main{
     background-color: red;
     color: white;
 }
+
+.dias-btn button.ativo {
+    background-color: #007bff; /* Cor azul quando clicado */
+    color: white;
+}
+
