@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.svg" alt="logo">
+        <img onclick="voltarInicio()" src="img/logo.svg" alt="logo">
     </header>
     <main>
         <main id="cadastro-mes">
@@ -51,10 +51,11 @@
         </main>
         <main id="cadastro-horas">
             <h2>Horas Trabalhadas</h2>
+            <div id="segunda">
             <div class="row-info">
             <div class="column-info">
             <label id="dia">SEGUNDA</label>
-            <label id="ocorrencias">DIAS 4</label>
+            <label id="ocorrencias">4 Dias</label>
             </div>
             <div class="column-info">
                 <div class="entrada">
@@ -62,9 +63,27 @@
                 <a href="#" id="decrementar" onclick="decrementarHora()">-1</a>
                 <a href="#" id="incrementar" onclick="incrementarHora()">+1</a>
                 </div>
+                <hr>
             </div>
             </div>
-            <hr>
+            </div>
+            <div id="terca">
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">TERÇA</label>
+            <label id="ocorrencias">5 Dias</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-trabalhada" type="number" value="0">
+                <a href="#" id="decrementar" onclick="decrementarHora()">-1</a>
+                <a href="#" id="incrementar" onclick="incrementarHora()">+1</a>
+                </div>
+                <hr>
+            </div>
+            </div>
+            </div>
+
             <div class="opt">
             <button class="back">Voltar</button>   
             <button class="next" onclick="etapaFinal()">Concluir</button>

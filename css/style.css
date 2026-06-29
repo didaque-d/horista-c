@@ -77,6 +77,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .column-info input{
     width: 50%;
@@ -133,4 +134,16 @@ main{
     background-color: #007bff; /* Cor azul quando clicado */
     color: white;
 }
+#segunda, #terca{
+    display: none;
+}
 
+@media screen and (min-width: 1080px) {
+    header img{
+        max-width: 20%;
+    }
+    main{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}

@@ -53,7 +53,15 @@ function etapa2(){
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-horas").style.display = "block";
 }
+function concluir(){
+    const a = null;
+}
+function voltarInicio(){
+    document.getElementById("cadastro-dias").style.display = "none";
+    document.getElementById("cadastro-mes").style.display = "block";
+    document.getElementById("cadastro-horas").style.display = "none";
 
+}
 let qtdHoras = 0;
 function incrementarHora(){
     qtdHoras++;
@@ -66,15 +74,7 @@ function decrementarHora(){
         document.getElementById("hora-trabalhada").value = qtdHoras;
         console.log(qtdHoras);
     }
-    
 }
-
-
-
-
-
-
-
 
 
 
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.addEventListener('click', (event) =>{
             if(event.target.tagName === 'BUTTON') {
                 event.target.classList.toggle('ativo');
+                document.getElementById("segunda").style.display = 'block';
             }
         });
     } else{
