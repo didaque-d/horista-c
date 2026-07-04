@@ -26,7 +26,7 @@ main{
     text-align: center;
 }
 #cadastro-dias, #cadastro-horas{
-    display: none;
+    display: noe;
 }
 .opt{
     margin: 5px;
@@ -135,7 +135,7 @@ main{
     color: white;
 }
 #segunda, #terca{
-    display: none;
+    display: non;
 }
 
 @media screen and (min-width: 1080px) {
