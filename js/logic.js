@@ -1,4 +1,17 @@
 listaMeses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+listaDias = {
+    "segunda" : 0,
+    "terça" : 0,
+    "quarta" : 0,
+    "quinta" : 0,
+    "sexta" : 0,
+    "sábado" : 0,
+    "domingo" : 0
+};
+const chaves = Object.keys(listaDias)
+console.log(chaves)
+
+
 function gravarMes(){
     const mes = document.getElementById("selecionar-mes").value;
     switch(mes){
@@ -72,6 +85,12 @@ function voltarInicio(){
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-mes").style.display = "block";
     document.getElementById("cadastro-horas").style.display = "none";
+
+}
+const incrementar = () => {
+    
+    const chaves = Object.keys(listaDias);
+
 
 }
 /*
