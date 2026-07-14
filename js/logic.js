@@ -87,54 +87,19 @@ function voltarInicio(){
     document.getElementById("cadastro-horas").style.display = "none";
 
 }
-const incrementar = () => {
-    
+const incrementar = () => { 
+    document.getElementById("cadastro-horas").addEventListener('click', function (event){
+        const btnID = event.target.dataset.id;
+        console.log(btnID)
+        switch(btnID){
+            case 'decSeg':
+                console.log("inserir o comando");
+                break;
+            case 'incSeg':
+                console("inserir o comando")
+        }
+        
+    });
     const chaves = Object.keys(listaDias);
-
-
+    
 }
-/*
-let qtdHorasSeg = 0;
-function incrementarHoraSeg(){
-    qtdHorasSeg++;
-    document.getElementById("hora-seg").value = qtdHorasSeg;
-    console.log(qtdHorasSeg);
-}
-function decrementarHoraSeg(){
-    if(qtdHorasSeg > 0){
-        qtdHorasSeg--;
-        document.getElementById("hora-seg").value = qtdHorasSeg;
-        console.log(qtdHorasSeg);
-    }
-}
-
-let qtdHorasTer = 0;
-function incrementarHoraTer(){
-    qtdHorasTer++;
-    document.getElementById("hora-ter").value = qtdHorasTer;
-    console.log(qtdHorasTer);
-}
-function decrementarHoraTer(){
-    if(qtdHorasTer > 0){
-        qtdHorasTer--;
-        document.getElementById("hora-ter").value = qtdHorasTer;
-        console.log(qtdHorasTer);
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.dias-btn');
-    if(container){
-        container.addEventListener('click', (event) =>{
-            if(event.target.tagName === 'BUTTON') {
-                event.target.classList.toggle('ativo');
-                document.getElementById("segunda").style.display = 'block';
-                console.log(event);
-            }
-        });
-    } else{
-        console.error("Não encontrado");
-    }
-})
-
-*/
