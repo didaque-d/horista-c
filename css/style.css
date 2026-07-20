@@ -134,8 +134,8 @@ main{
     background-color: #007bff; /* Cor azul quando clicado */
     color: white;
 }
-#segunda, #terca{
-    display: non;
+#segunda, #terca, #cadastro-horas, #cadastro-dias{
+    display: none;
 }
 
 @media screen and (min-width: 1080px) {

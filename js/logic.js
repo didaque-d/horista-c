@@ -1,21 +1,21 @@
 listaMeses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 listaDias = {
-    "segunda" : 0,
-    "terça" : 0,
-    "quarta" : 0,
-    "quinta" : 0,
-    "sexta" : 0,
-    "sábado" : 0,
-    "domingo" : 0
+    "segunda": 0,
+    "terça": 0,
+    "quarta": 0,
+    "quinta": 0,
+    "sexta": 0,
+    "sábado": 0,
+    "domingo": 0
 };
 const chaves = Object.keys(listaDias)
 console.log(chaves)
 
 
-function gravarMes(){
+function gravarMes() {
     const mes = document.getElementById("selecionar-mes").value;
-    switch(mes){
-        case "0": 
+    switch (mes) {
+        case "0":
             console.log(listaMeses[0]);
             document.getElementById("mes-escolhido").innerHTML = listaMeses[0];
             break;
@@ -63,43 +63,58 @@ function gravarMes(){
             console.log(listaMeses[11]);
             document.getElementById("mes-escolhido").innerHTML = listaMeses[11];
             break;
+    }
 }
-}
-function etapa1(){
+function etapa1() {
     gravarMes();
     document.getElementById("cadastro-dias").style.display = "block";
     document.getElementById("cadastro-mes").style.display = "none";
 }
-function voltar1(){
+function voltar1() {
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-mes").style.display = "block";
 }
-function etapa2(){
+function etapa2() {
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-horas").style.display = "block";
 }
-function concluir(){
+function concluir() {
     const a = null;
 }
-function voltarInicio(){
+function voltarInicio() {
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-mes").style.display = "block";
     document.getElementById("cadastro-horas").style.display = "none";
 
 }
-const incrementar = () => { 
-    document.getElementById("cadastro-horas").addEventListener('click', function (event){
+const incrementar = () => {
+    document.getElementById("cadastro-horas").addEventListener('click', function (event) {
         const btnID = event.target.dataset.id;
         console.log(btnID)
-        switch(btnID){
+        switch (btnID) {
             case 'decSeg':
                 console.log("inserir o comando");
                 break;
             case 'incSeg':
                 console("inserir o comando")
         }
-        
+
     });
     const chaves = Object.keys(listaDias);
-    
+
 }
+function mudarCor() {
+    const containerDias = document.querySelector(".dias-btn");
+    containerDias.addEventListener('click', (event) => {
+        if (event.target.tagName === 'BUTTON') {
+            event.target.classList.toggle('ativo');
+            console.log(event.target.value);
+            let diaSelecionado = event.target.value;
+            if(diaSelecionado == 0 ){
+                document.getElementById("segunda").style.display = "block";
+            }
+        }
+    });
+}
+
+mudarCor()
