@@ -82,11 +82,101 @@
             </div>
             </div>
             </div>
+            <div id="quarta">
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">QUARTA</label>
+            <label id="ocorrencias">5 Dias</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-ter" type="number" value="0">
+                <a href="#" id="decrementar" data-id="decQua">-1</a>
+                <a href="#" id="incrementar" data-id="incQua">+1</a>
+                </div>
+                <hr>
+            </div>
+            </div>
+            </div>
+            <!-- QUINTA -->
+            <div id="quinta">
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">QUINTA</label>
+            <label id="ocorrencias">5 Dias</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-qui" type="number" value="0">
+                <a href="#" id="decrementar" data-id="decQui">-1</a>
+                <a href="#" id="incrementar" data-id="incQui">+1</a>
+                </div>
+                <hr>
+            </div>
+            </div>
+            </div>
 
+            <!-- SEXTA -->
+            <div id="sexta">
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">SEXTA</label>
+            <label id="ocorrencias">5 Dias</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-sex" type="number" value="0">
+                <a href="#" id="decrementar" data-id="decSex">-1</a>
+                <a href="#" id="incrementar" data-id="incSex">+1</a>
+                </div>
+                <hr>
+            </div>
+            </div>
+            </div>
+
+            <!-- SÁBADO -->
+            <div id="sabado">
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">SÁBADO</label>
+            <label id="ocorrencias">4 Dias</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-sab" type="number" value="0">
+                <a href="#" id="decrementar" data-id="decSab">-1</a>
+                <a href="#" id="incrementar" data-id="incSab">+1</a>
+                </div>
+                <hr>
+            </div>
+            </div>
+            </div>
+
+            <!-- DOMINGO -->
+            <div id="domingo">
+            <div class="row-info">
+            <div class="column-info">
+            <label id="dia">DOMINGO</label>
+            <label id="ocorrencias">4 Dias</label>
+            </div>
+            <div class="column-info">
+                <div class="entrada">
+                <input id="hora-dom" type="number" value="0">
+                <a href="#" id="decrementar" data-id="decDom">-1</a>
+                <a href="#" id="incrementar" data-id="incDom">+1</a>
+                </div>
+                <hr>
+            </div>
+            </div>
+            </div>
             <div class="opt">
-            <button class="back">Voltar</button>   
+            <button class="back" onclick="voltar2()">Voltar</button>   
             <button class="next" onclick="etapaFinal()">Concluir</button>
             </div>
+        </main>
+        <main id="resultado">
+            <h2>Resultado</h2>
+            <div id="totalHoras"></div>
         </main>
     </main>
     <script src="js/logic.js"></script>

@@ -134,7 +134,7 @@ main{
     background-color: #007bff; /* Cor azul quando clicado */
     color: white;
 }
-#segunda, #terca, #cadastro-horas, #cadastro-dias{
+#segunda, #terca, #quarta, #quinta, #sexta, #sabado, #domingo, #resultado, #cadastro-horas, #cadastro-dias{
     display: none;
 }
 
