@@ -97,9 +97,11 @@ const incrementar = () => {
         console.log(btnID)
         switch (btnID) {
             case 'decSeg':
-                listaDias["segunda"]--;
-                document.getElementById("hora-seg").value = listaDias["segunda"];
-                console.log(listaDias);
+                if(listaDias["segunda"] > 0){
+                    listaDias["segunda"]--;
+                    document.getElementById("hora-seg").value = listaDias["segunda"];
+                    console.log(listaDias);
+                }
                 break;
             case 'incSeg':
                 listaDias["segunda"]++;
