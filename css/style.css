@@ -24,9 +24,7 @@ main{
     margin: 10px;
     padding: 5px;
     text-align: center;
-}
-#cadastro-dias, #cadastro-horas{
-    display: no;
+    overflow: hidden;
 }
 .opt{
     margin: 5px;
