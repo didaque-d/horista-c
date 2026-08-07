@@ -26,7 +26,7 @@ main{
     text-align: center;
 }
 #cadastro-dias, #cadastro-horas{
-    display: noe;
+    display: no;
 }
 .opt{
     margin: 5px;
@@ -69,7 +69,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     width: 30%;
     aspect-ratio: 1/1;
 }
@@ -120,10 +119,13 @@ main{
 }
 /*Estilos para btn*/
 
-
 .next{
     background-color: green;
     color: white;
+    border: none;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
 }
 .back{
     background-color: red;
@@ -134,10 +136,31 @@ main{
     background-color: #007bff; /* Cor azul quando clicado */
     color: white;
 }
-#segunda, #terca, #quarta, #quinta, #sexta, #sabado, #domingo, #resultado, #cadastro-horas, #cadastro-dias{
+#segunda, #terca, #quarta, #quinta, #sexta, #sabado, #domingo, #resultado, #cadastro-horas, #cadastro-dias, #definir-salario{
     display: none;
 }
-
+#resultado{
+    flex-direction: column;
+    gap: 5px;
+}
+#definir-salario{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+::placeholder{
+    text-align: center;
+}
+.area-resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.area-resultado label{
+    font-weight: bolder;
+}
 @media screen and (min-width: 1080px) {
     header img{
         max-width: 20%;

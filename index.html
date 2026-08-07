@@ -174,9 +174,22 @@
             <button class="next" onclick="etapaFinal()">Concluir</button>
             </div>
         </main>
+        <main id="definir-salario">
+            <h2>Valor por hora</h2>
+            <input id="valorHora" type="text" placeholder="ex: 25.00">
+            <button onclick="resultado()" class="next">Concluir</button>
+        </main>
         <main id="resultado">
             <h2>Resultado</h2>
+            <div class="area-resultado">
+                <label for="">Horas:</label>
             <div id="totalHoras"></div>
+            <p>(h)</p>
+            </div>
+            <div class="area-resultado">
+                <label for="">Salário R$</label>
+            <div id="salarioFinal"></div>
+            </div>
         </main>
     </main>
     <script src="js/logic.js"></script>

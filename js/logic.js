@@ -91,6 +91,11 @@ function voltarInicio() {
     document.getElementById("cadastro-horas").style.display = "none";
 
 }
+function etapaFinal(){
+    document.getElementById("cadastro-horas").style.display = "none";
+    document.getElementById("definir-salario").style.display = "flex";
+}
+
 const incrementar = () => {
     document.getElementById("cadastro-horas").addEventListener('click', function (event) {
         const btnID = event.target.dataset.id;
@@ -213,3 +218,14 @@ function mudarCor() {
 }
 
 mudarCor();
+
+function resultado(){
+    document.getElementById("definir-salario").style.display = "none";
+    document.getElementById("resultado").style.display = "flex";
+    const valorHora = document.getElementById("valorHora").value; 
+    const total = Object.values(listaDias).reduce((acc, val) => acc + val, 0);
+    console.log(total);
+    document.getElementById("totalHoras").innerHTML = total;
+    const salario = total * valorHora;
+    document.getElementById("salarioFinal").innerHTML = salario;
+}
