@@ -225,7 +225,7 @@ function resultado(){
     const valorHora = document.getElementById("valorHora").value; 
     const total = Object.values(listaDias).reduce((acc, val) => acc + val, 0);
     console.log(total);
-    document.getElementById("totalHoras").innerHTML = total;
+    document.getElementById("totalHoras").innerHTML = total.toFixed(2);
     const salario = total * valorHora;
     document.getElementById("salarioFinal").innerHTML = salario;
 }
