@@ -78,7 +78,7 @@ function etapa2() {
     document.getElementById("cadastro-dias").style.display = "none";
     document.getElementById("cadastro-horas").style.display = "block";
 }
-function voltar2(){
+function voltar2() {
     document.getElementById("cadastro-dias").style.display = "block";
     document.getElementById("cadastro-horas").style.display = "none";
 }
@@ -91,7 +91,7 @@ function voltarInicio() {
     document.getElementById("cadastro-horas").style.display = "none";
 
 }
-function etapaFinal(){
+function etapaFinal() {
     document.getElementById("cadastro-horas").style.display = "none";
     document.getElementById("definir-salario").style.display = "flex";
 }
@@ -102,7 +102,7 @@ const incrementar = () => {
         console.log(btnID)
         switch (btnID) {
             case 'decSeg':
-                if(listaDias["segunda"] > 0){
+                if (listaDias["segunda"] > 0) {
                     listaDias["segunda"]--;
                     document.getElementById("hora-seg").value = listaDias["segunda"];
                     console.log(listaDias);
@@ -198,19 +198,19 @@ function mudarCor() {
             const estiloDisplay = isAtivo ? "block" : "none";
             console.log(event.target.value);
             let diaSelecionado = event.target.value;
-            if(diaSelecionado == 0 ){
+            if (diaSelecionado == 0) {
                 document.getElementById("segunda").style.display = estiloDisplay;
-            }else if(diaSelecionado == 1){
+            } else if (diaSelecionado == 1) {
                 document.getElementById("terca").style.display = estiloDisplay;
-            }else if(diaSelecionado == 2){
+            } else if (diaSelecionado == 2) {
                 document.getElementById("quarta").style.display = estiloDisplay;
-            }else if(diaSelecionado == 3){
+            } else if (diaSelecionado == 3) {
                 document.getElementById("quinta").style.display = estiloDisplay;
-            }else if(diaSelecionado == 4){
+            } else if (diaSelecionado == 4) {
                 document.getElementById("sexta").style.display = estiloDisplay;
-            }else if(diaSelecionado == 5){
+            } else if (diaSelecionado == 5) {
                 document.getElementById("sabado").style.display = estiloDisplay;
-            }else if(diaSelecionado == 6){
+            } else if (diaSelecionado == 6) {
                 document.getElementById("domingo").style.display = estiloDisplay;
             }
         }
@@ -219,13 +219,14 @@ function mudarCor() {
 
 mudarCor();
 
-function resultado(){
+function resultado() {
     document.getElementById("definir-salario").style.display = "none";
     document.getElementById("resultado").style.display = "flex";
-    const valorHora = document.getElementById("valorHora").value; 
+    const valorHora = document.getElementById("valorHora").value;
     const total = Object.values(listaDias).reduce((acc, val) => acc + val, 0);
     console.log(total);
-    document.getElementById("totalHoras").innerHTML = total;
+    document.getElementById("totalHoras").innerHTML = total.toFixed(2);
     const salario = total * valorHora;
     document.getElementById("salarioFinal").innerHTML = salario;
 }
+
