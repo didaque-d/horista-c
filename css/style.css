@@ -28,6 +28,7 @@ main{
 }
 .opt{
     margin: 5px;
+    margin-top: 15px;
 }
 .opt button{
     border: none;
@@ -166,5 +167,17 @@ main{
     main{
         margin-left: 200px;
         margin-right: 200px;
+    }
+    .entrada input, .entrada a{
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .entrada a{
+        max-width: 10%;
+    }
+    .dias-btn button{
+        width: 10%;
     }
 }
